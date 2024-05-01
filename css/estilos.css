@@ -4,12 +4,34 @@
     font-family: Arial, sans-serif;
 }
 
-header, footer {
-    margin: 5px;
-    border: 2px solid black;
-    border-radius: 10px;
-}
-
+.bg-1 {
+  background-color: rgb(47, 96, 90)
+  }
+  
+.bg-2 {
+  background-color: rgb(247, 247, 213)
+  }
+  
+.text-1 {
+    color:  rgb(47, 96, 90)
+  }
+    
+.text-2 {
+    color: rgb(247, 247, 213)
+  }
+  
+.navbar{
+    padding: 0rem;
+  }
+  
+.navbar-nav li{
+    padding-right: 20px;
+  }
+  
+.nav-link{
+    font-size: 1.1em !important;
+  }
+  
 main {
     margin: 5px;
     display: flex;
@@ -23,7 +45,6 @@ main {
 
 .imag-fondo {
     margin: 10px;
-
 } 
 
 footer {
@@ -35,71 +56,21 @@ footer {
     text-align: center;
   }
 
-  /* Estilos de la barra de navegación */
-  nav {
-    background-color: white;
-    border-radius: 10px;
-    color: white;
-    display: flex;
-    align-items: center;
-    padding: 10px 20px;
-  }
-
-  .logo-navbar {
-    height: 70px; /* Altura de la imagen */
-    margin: 5px;
-    animation: girar 5s infinite linear;
-  }
-
-  @keyframes girar {
-    from {
-      transform: rotate(360deg); /* Rotación inicial */
-    }
-    to {
-      transform: rotate(0deg); /* Rotación completa */
-    }
-  }
-
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    margin-left: auto; /* Mueve los ítems al margen derecho */
-  }
-
-  li {
-    margin-left: 20px; /* Espacio entre ítems */
-    background-color: rgb(97, 108, 189);
-    border: 1px solid rgb(97, 108, 189);
-    border-radius: 5px;
-    padding: 15px;
-  }
-
-  li:first-child {
-    margin-left: 0; /* Elimina el margen izquierdo del primer ítem */
-  }
-
-a {
+/*a {
     color: #fff;
     text-decoration: none;
     transition: color 0.3s;
-    
-  }
-
-/* a:hover {
-    color: green;
   } */
 
 li:hover {
-    color: white;
-    background-color: rgb(76, 83, 143);
+    font-weight: bold;
+    color: rgb(47, 96, 90);
 }
 
-a:visited {
+/* a:visited {
     text-decoration: none;
     color: white;
-}
+} */
 
 h1 {
     text-align: center;
