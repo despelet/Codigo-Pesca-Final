@@ -121,7 +121,7 @@ h1 {
 .barra-lat {
   grid-area: barra-lat; /* nombre del area con el q defino arriba el espacio que va a ocupar */ 
   background-color: beige;
-  border: 2px solid red; /* le pongo borde para ubicarme en el espacio */
+  border: 2px solid black; /* le pongo borde para ubicarme en el espacio */
 
 
 }
@@ -143,11 +143,27 @@ h1 {
 .contenido-productos {
   grid-area: contenido-productos; /* nombre del area con el q defino arriba el espacio que va a ocupar */
   background-color: beige;
-  border: 2px solid red; /* le pongo borde para ubicarme en el espacio */
+  border: 2px solid black; /* le pongo borde para ubicarme en el espacio */
   border-radius: 0;
+  display: grid;
+  grid-template-areas:  "titulo titulo titulo"
+                        "prod1 prod2 prod3";
 }
 
 .tit-cont-productos {
   padding: 5px;
+  grid-area: titulo;
 
+}
+
+.prod1, .prod2, .prod3 {
+  margin: 5px;
+  border: 1px solid black;
+  justify-content: center;
+}
+
+.img-prod {
+  max-width: 30%;
+  justify-content: space-evenly;
+  
 }
