@@ -106,3 +106,48 @@ h1 {
 }
 
 /* PRODUCTOS */
+.contenedor-productos {
+  
+  border: 2px solid black;
+  margin: 10px;
+  padding: 10px;
+
+  display: grid;
+  gap: 20px; /* espacio entre elementos */
+  grid-template-areas: "barra-lat contenido-productos contenido-productos";
+
+}
+
+.barra-lat {
+  grid-area: barra-lat; /* nombre del area con el q defino arriba el espacio que va a ocupar */ 
+  background-color: beige;
+  border: 2px solid red; /* le pongo borde para ubicarme en el espacio */
+
+
+}
+
+.tit-barra-lat {
+  padding: 5px;
+}
+
+.link-cr {  /* link a pagina de cañas y redes */
+
+  /* ATENCION me toma los estilos de los links de la pagina principal
+      MODIFICAR una vez que suban la pagina principal */
+  text-decoration: none;
+  color: black;
+
+}
+
+
+.contenido-productos {
+  grid-area: contenido-productos; /* nombre del area con el q defino arriba el espacio que va a ocupar */
+  background-color: beige;
+  border: 2px solid red; /* le pongo borde para ubicarme en el espacio */
+  border-radius: 0;
+}
+
+.tit-cont-productos {
+  padding: 5px;
+
+}
