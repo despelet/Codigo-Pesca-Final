@@ -138,3 +138,16 @@ h1 {
   justify-content: space-evenly;
   
 }
+
+.fondo-prod {
+  padding: 10px;
+  color: white;
+}
+
+.flecha, .fondo-prod {
+  background-color: black;
+}
+
+.imag-prod {
+  max-width: 1200px; max-height: 1200px;
+}
