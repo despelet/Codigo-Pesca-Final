@@ -145,8 +145,15 @@ h1 {
   color: white;
 }
 
-.flecha, .fondo-prod {
-  background-color: black;
+.flecha {
+  background-color: rgb(47, 96, 90);
+  border-radius: 10px;
+  height: 100px;
+  align-self: center;
+
+} 
+.fondo-prod {
+  background-color: rgb(47, 96, 90, 0.8);
 }
 
 .imag-prod {
