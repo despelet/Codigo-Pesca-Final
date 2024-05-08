@@ -1,0 +1,121 @@
+<!-- aca puedo hacer el carrousel -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+    
+    <header>
+        <nav class="navbar navbar-expand-lg bg-2">
+            <div class="container-fluid">
+                <a class="navbar-brand  ps-2" href="#" p><img src="../img/logoverde_85px_horizontal.png"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link text-1" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-1" href="quienes_somos.html">Quienes Somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-1" href="productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-1" href="formulario.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+          </nav>
+        </header>
+
+    <br><h1 class="tit-prod">Productos</h1><br>
+
+   <main class="fondo-prod"> <!-- Carousel ind -->
+    <div id="demo" class="carousel" data-bs-ride="carousel">
+
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+        </div>
+        
+        <div class="carousel-inner">
+          <div class="carousel-item active ">
+            <img src="../img/indumentaria/Buzo-Polar-Payo-10.png" class="d-block mx-auto imag-prod" style="width:65%">
+          </div>
+          <div class="carousel-item">
+            <img src="../img/indumentaria/Remera-Payo-Capucha-Breaking-Limits-Full-Collor-Proteccion-UV-40-1.png"  class="d-block mx-auto imag-prod" style="width:65%" >
+          </div>
+          <div class="carousel-item">
+            <img src="../img/indumentaria/Campera-Payo-Rompeviento-Impermeable-3-scaled.jpg"  class="d-block mx-auto imag-prod" style="width:65%">
+          </div>
+        </div>
+        
+        <button class="carousel-control-prev flecha" type="button" data-bs-target="#demo" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next flecha" type="button" data-bs-target="#demo" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+      
+      <div class="container-fluid mt-3">
+        <h3>Indumentaria</h3>
+        <p>Conocé todas las opciones que tenemos para vos haciendo click <a href="indumentaria.html">aquí</a></p>
+      </div>
+    
+   </main> 
+
+   <main class="fondo-prod"> <!-- Carousel cañas y reeles -->
+    <div id="demo" class="carousel" data-bs-ride="carousel">
+
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+        </div>
+        
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../img/cañas/Cana-13-Fishing-Muse-Bait-Cast-4.png" class="d-block mx-auto imag-prod" style="width:65%">
+          </div>
+          <div class="carousel-item">
+            <img src="../img/cañas/Cana-Rapala-TS2-Bait-1-tramo-2-tramos-4.png"  class="d-block mx-auto imag-prod" style="width:65%" >
+          </div>
+          <div class="carousel-item">
+            <img src="../img/cañas/Reel-Rotativo-Marine-Black-Widow-2022.jpg"  class="d-block mx-auto imag-prod" style="width:65%">
+          </div>
+        </div>
+        
+        <button class="carousel-control-prev flecha" type="button" data-bs-target="#demo" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next flecha" type="button" data-bs-target="#demo" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+      
+      <div class="container-fluid mt-3">
+        <h3>Cañas y Reeles</h3>
+        <p>Conocé todas las opciones que tenemos para vos haciendo click <a href="cañas_reeles.html">aquí</a></p>
+      </div>
+    
+   </main>
+
+
+    <footer>
+        <p>Derechos Reservados @2024</p>
+
+    </footer>
+</body>
+</html>

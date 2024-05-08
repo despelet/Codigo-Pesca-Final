@@ -48,8 +48,8 @@ main {
 } 
 
 footer {
-    background-color: white;
-    border: 2px solid black;
+    background-color: rgb(247, 247, 213);
+    /* border: 2px solid black; */
     color: black;
     height: 50px;
     align-content: center;
@@ -85,21 +85,22 @@ h1 {
 
   display: grid;
   gap: 20px; /* espacio entre elementos */
-  grid-template-areas: "barra-lat contenido-productos contenido-productos";
+  grid-template-areas: " contenido-productos contenido-productos contenido-productos";
 
 }
 
-.barra-lat {
-  grid-area: barra-lat; /* nombre del area con el q defino arriba el espacio que va a ocupar */ 
+/* .barra-lat {
+  grid-area: barra-lat; /* nombre del area con el q defino arriba el espacio que va a ocupar  
   background-color: beige;
-  border: 2px solid black; /* le pongo borde para ubicarme en el espacio */
+  border: 2px solid black; /* le pongo borde para ubicarme en el espacio 
+  border-radius: 5px;
+  max-width: 40%;
 
+} */
 
-}
-
-.tit-barra-lat {
+/* .tit-barra-lat {
   padding: 5px;
-}
+} */
 
 .link-cr {  /* link a pagina de cañas y redes */
 
@@ -113,28 +114,41 @@ h1 {
 
 .contenido-productos {
   grid-area: contenido-productos; /* nombre del area con el q defino arriba el espacio que va a ocupar */
-  background-color: beige;
+  /* background-color: beige; */
   border: 2px solid black; /* le pongo borde para ubicarme en el espacio */
-  border-radius: 0;
+  border-radius: 5;
   display: grid;
   grid-template-areas:  "titulo titulo titulo"
                         "prod1 prod2 prod3";
 }
 
-.tit-cont-productos {
+/* .tit-cont-productos {
   padding: 5px;
   grid-area: titulo;
 
-}
+} */
 
-.prod1, .prod2, .prod3 {
+/* .prod1, .prod2, .prod3 {
   margin: 5px;
   border: 1px solid black;
   justify-content: center;
-}
+} */
 
 .img-prod {
   max-width: 30%;
   justify-content: space-evenly;
   
+}
+
+.fondo-prod {
+  padding: 10px;
+  color: white;
+}
+
+.flecha, .fondo-prod {
+  background-color: black;
+}
+
+.imag-prod {
+  max-width: 1200px; max-height: 1200px;
 }
