@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
+    box-sizing: border-box;
 }
 
 .bg-1 {
@@ -38,7 +39,7 @@ main {
     justify-content: center;
     align-items: center;
     background-color: white;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     border-radius: 10px;
     height: auto;
 }
@@ -56,51 +57,21 @@ footer {
     text-align: center;
   }
 
-/*a {
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.3s;
-  } */
 
 li:hover {
     font-weight: bold;
     color: rgb(47, 96, 90);
 }
 
-/* a:visited {
-    text-decoration: none;
-    color: white;
-} */
+
 
 h1 {
     text-align: center;
 }
 
 /* PRODUCTOS */
-.contenedor-productos {
-  
-  border: 2px solid black;
-  margin: 10px;
-  padding: 10px;
 
-  display: grid;
-  gap: 20px; /* espacio entre elementos */
-  grid-template-areas: " contenido-productos contenido-productos contenido-productos";
 
-}
-
-/* .barra-lat {
-  grid-area: barra-lat; /* nombre del area con el q defino arriba el espacio que va a ocupar  
-  background-color: beige;
-  border: 2px solid black; /* le pongo borde para ubicarme en el espacio 
-  border-radius: 5px;
-  max-width: 40%;
-
-} */
-
-/* .tit-barra-lat {
-  padding: 5px;
-} */
 
 .link-cr {  /* link a pagina de cañas y redes */
 
@@ -113,31 +84,26 @@ h1 {
 
 
 .contenido-productos {
-  grid-area: contenido-productos; /* nombre del area con el q defino arriba el espacio que va a ocupar */
-  /* background-color: beige; */
-  border: 2px solid black; /* le pongo borde para ubicarme en el espacio */
-  border-radius: 5;
-  display: grid;
-  grid-template-areas:  "titulo titulo titulo"
-                        "prod1 prod2 prod3";
+  
+  border-radius: 5px;
+  background-color: rgb(231, 241, 240);
+  padding: 0;
 }
-
-/* .tit-cont-productos {
-  padding: 5px;
-  grid-area: titulo;
-
-} */
-
-/* .prod1, .prod2, .prod3 {
-  margin: 5px;
-  border: 1px solid black;
-  justify-content: center;
-} */
 
 .img-prod {
   max-width: 30%;
   justify-content: space-evenly;
+  max-width: 1200px; max-height: 1200px;
   
+  
+}
+
+.prod1:hover {
+  transform: scale(1.05); /* aumenta el tamaño en un 5% */
+  box-shadow: 0 0 20px rgb(47, 96, 90); /* añade una sombra */
+  transition: transform 0.3s ease; /* transición suave */
+  /* background-color: rgb(47, 96, 90); */
+
 }
 
 .fondo-prod {
@@ -156,6 +122,17 @@ h1 {
   background-color: rgb(47, 96, 90, 0.8);
 }
 
-.imag-prod {
-  max-width: 1200px; max-height: 1200px;
+.col-md {
+  /* border: solid black 1px; */
+  margin: 5px;
+  padding: 5px;
+  margin-top: 5px;
 }
+.row {
+  flex-wrap: wrap;
+}
+
+/* .row:hover {
+  box-shadow: black;
+  resize: 1.1rem;
+} */
