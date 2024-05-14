@@ -71,17 +71,15 @@ h1 {
 
 /* PRODUCTOS */
 
-
-
-.link-cr {  /* link a pagina de cañas y redes */
-
-  /* ATENCION me toma los estilos de los links de la pagina principal
-      MODIFICAR una vez que suban la pagina principal */
-  text-decoration: none;
-  color: black;
-
+#pagina-prod {
+  color: white;
+  /* text-decoration: none; */
 }
 
+#pagina-prod:hover {
+  font-size: 1.3rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
 
 .contenido-productos {
   
@@ -122,17 +120,63 @@ h1 {
   background-color: rgb(47, 96, 90, 0.8);
 }
 
-.col-md {
+#col-md {
   /* border: solid black 1px; */
   margin: 5px;
   padding: 5px;
   margin-top: 5px;
+  max-width: auto;
 }
-.row {
+#row {
   flex-wrap: wrap;
 }
 
-/* .row:hover {
-  box-shadow: black;
-  resize: 1.1rem;
-} */
+.imag-prod {
+  max-width: 100%; /* Cambiar a 100% para que las imágenes se ajusten al contenedor */
+  max-height: auto;
+}
+
+.galeria {
+  display: flex;
+  flex-direction: row;
+}
+
+
+/* media queries */
+
+/* extra small devices */
+@media screen and (max-width: 599px) {
+  .galeria {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+
+/* small devices */
+@media screen and (min-width: 600px) and (max-width: 767px) {
+  .galeria {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+}
+
+/* medium devices */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  
+}
+
+/* large devices */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+
+
+}
+
+/* extra large devices */
+@media screen and (min-width: 1200px) {
+
+}
+
+/* tengo q tocar galeria */
