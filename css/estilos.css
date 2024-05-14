@@ -104,11 +104,21 @@ h1 {
   background-color: rgb(47, 96, 90, 0.8);
 }
 
+.main { /*para el fondo de la pagina de productos */
+  background-color: rgb(231, 241, 240);
+}
+
 .tit-prod { /* titulo de la pagins de productos */
   border-radius: 10px;
   font-size: 3rem;
+
   color: rgb(47, 90, 96);
+
+  padding: 10px;
+  margin-top: 20px;
+
   animation: ingresoTitulo 2.5s ;
+
 }
 
 @keyframes ingresoTitulo {
