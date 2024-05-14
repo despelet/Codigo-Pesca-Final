@@ -108,14 +108,16 @@ h1 {
   border-radius: 10px;
   font-size: 3rem;
   color: rgb(47, 90, 96);
-}
-
-.tit-prod:hover {
-  animation: ingresoTitulo 3s ;
+  animation: ingresoTitulo 2.5s ;
 }
 
 @keyframes ingresoTitulo {
-  
+  0% {
+    transform: translateX(-100%);
+}
+100% {
+    transform: translateX(0);
+}
 }
 
 .flecha {/* productos.html*/
@@ -126,12 +128,12 @@ h1 {
 
 } 
 
-.imag-prod {
+.imag-prod { /* imagenes del carrousel */ 
   max-width: 100%; /* Cambiar a 100% para que las imágenes se ajusten al contenedor */
   max-height: auto;
 }
 
-.galeria {
+.galeria { /* para hacer el carrousel responsivo */
   display: flex;
   flex-direction: row;
 }
