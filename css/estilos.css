@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
+    box-sizing: border-box;
 }
 
 .bg-1 {
@@ -38,7 +39,7 @@ main {
     justify-content: center;
     align-items: center;
     background-color: white;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     border-radius: 10px;
     height: auto;
 }
@@ -56,99 +57,139 @@ footer {
     text-align: center;
   }
 
-/*a {
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.3s;
-  } */
 
 li:hover {
     font-weight: bold;
     color: rgb(47, 96, 90);
 }
 
-/* a:visited {
-    text-decoration: none;
-    color: white;
-} */
+
 
 h1 {
     text-align: center;
 }
 
 /* PRODUCTOS */
-.contenedor-productos {
-  
-  border: 2px solid black;
-  margin: 10px;
-  padding: 10px;
 
-  display: grid;
-  gap: 20px; /* espacio entre elementos */
-  grid-template-areas: " contenido-productos contenido-productos contenido-productos";
-
+#pagina-prod { /* productos.html*/
+  color: white;
+  /* text-decoration: none; */
 }
 
-/* .barra-lat {
-  grid-area: barra-lat; /* nombre del area con el q defino arriba el espacio que va a ocupar  
-  background-color: beige;
-  border: 2px solid black; /* le pongo borde para ubicarme en el espacio 
-  border-radius: 5px;
-  max-width: 40%;
-
-} */
-
-/* .tit-barra-lat {
-  padding: 5px;
-} */
-
-.link-cr {  /* link a pagina de cañas y redes */
-
-  /* ATENCION me toma los estilos de los links de la pagina principal
-      MODIFICAR una vez que suban la pagina principal */
-  text-decoration: none;
-  color: black;
-
+#pagina-prod:hover { /* productos.html*/
+  font-size: 1.3rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-
+/* contenedor de todos los productos */
 .contenido-productos {
-  grid-area: contenido-productos; /* nombre del area con el q defino arriba el espacio que va a ocupar */
-  /* background-color: beige; */
-  border: 2px solid black; /* le pongo borde para ubicarme en el espacio */
-  border-radius: 5;
-  display: grid;
-  grid-template-areas:  "titulo titulo titulo"
-                        "prod1 prod2 prod3";
-}
-
-/* .tit-cont-productos {
-  padding: 5px;
-  grid-area: titulo;
-
-} */
-
-/* .prod1, .prod2, .prod3 {
-  margin: 5px;
-  border: 1px solid black;
-  justify-content: center;
-} */
-
-.img-prod {
-  max-width: 30%;
-  justify-content: space-evenly;
   
+  border-radius: 5px;
+  background-color: rgb(231, 241, 240);
+  padding: 20px;
+  margin: 5px;
+
 }
 
-.fondo-prod {
+/* cada producto tiene una sombra */
+.prod1:hover {
+  transform: scale(1.05); /* aumenta el tamaño en un 5% */
+  box-shadow: 0 0 20px rgb(47, 96, 90); /* añade una sombra */
+  transition: transform 0.3s ease; /* transición suave */
+}
+
+.fondo-prod { /* productos.html*/
   padding: 10px;
   color: white;
+  background-color: rgb(47, 96, 90, 0.8);
 }
 
-.flecha, .fondo-prod {
-  background-color: black;
+.main { /*para el fondo de la pagina de productos */
+  background-color: rgb(231, 241, 240);
 }
 
-.imag-prod {
-  max-width: 1200px; max-height: 1200px;
+.tit-prod { /* titulo de la pagins de productos */
+  border-radius: 10px;
+  font-size: 3rem;
+
+  color: rgb(47, 90, 96);
+
+  padding: 10px;
+  margin-top: 20px;
+
+  animation: ingresoTitulo 2.5s ;
+
 }
+
+@keyframes ingresoTitulo {
+  0% {
+    transform: translateX(-100%);
+}
+100% {
+    transform: translateX(0);
+}
+}
+
+.flecha {/* productos.html*/
+  background-color: rgb(47, 96, 90);
+  border-radius: 10px;
+  height: 100px;
+  align-self: center;
+
+} 
+
+.imag-prod { /* imagenes del carrousel */ 
+  max-width: 100%; /* Cambiar a 100% para que las imágenes se ajusten al contenedor */
+  max-height: auto;
+}
+
+.galeria { /* para hacer el carrousel responsivo */
+  display: flex;
+  flex-direction: row;
+}
+
+
+/* media queries */
+
+/* extra small devices */
+@media screen and (max-width: 599px) {
+  .galeria {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+
+/* small devices */
+@media screen and (min-width: 600px) and (max-width: 767px) {
+  .galeria {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  #row {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+}
+
+/* medium devices */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  
+}
+
+/* large devices */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+
+
+}
+
+/* extra large devices */
+@media screen and (min-width: 1200px) {
+
+}
+
+/* tengo q tocar galeria */
