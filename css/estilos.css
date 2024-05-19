@@ -63,10 +63,26 @@ li:hover {
     color: rgb(47, 96, 90);
 }
 
-
+.hero{
+	background-color: rgb(47,96,90);
+	background-image: url("../img/man_fishing.jpg");
+	padding-top: 200px;
+	padding-bottom: 200px;
+	padding-left: 10px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: white;
+	font-weight: bold;
+}
 
 h1 {
     text-align: center;
+}
+
+h2{
+	text-align: left;
+	align-items: start;
+	font-weight: bold;
 }
 
 /* PRODUCTOS */
