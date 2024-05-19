@@ -173,9 +173,7 @@ h1 {
     flex-direction: column;
     flex-wrap: wrap;
   }
-  /* .tit-prod {
-    font-size: 1rem;
-  } */
+  
 
 }
 
@@ -196,3 +194,44 @@ h1 {
 }
 
 /* tengo q tocar galeria */
+
+.fondo-qs {
+ background-color:  rgb(231, 241, 240);
+ padding: 10px;
+}
+
+.fondo-qs2 {
+  color: rgb(47, 96, 90, 0.8);
+}
+
+.fondo-qs2:hover {
+  color: rgb(47, 96, 90, 0.8);
+}
+
+.link-form {
+  color: black;
+  text-decoration: underline;
+}
+
+.link-form:visited {
+  color: blanck;
+  text-decoration: none;
+}
+
+.map-container {
+  position: relative;
+  padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  height: auto;
+}
+
+.map-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
