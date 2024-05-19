@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    /* font-family: Arial, sans-serif; */
     box-sizing: border-box;
 }
 
@@ -39,7 +39,6 @@ main {
     justify-content: center;
     align-items: center;
     background-color: white;
-    /* border: 2px solid black; */
     border-radius: 10px;
     height: auto;
 }
@@ -50,7 +49,6 @@ main {
 
 footer {
     background-color: rgb(247, 247, 213);
-    /* border: 2px solid black; */
     color: black;
     height: 50px;
     align-content: center;
@@ -63,8 +61,6 @@ li:hover {
     color: rgb(47, 96, 90);
 }
 
-
-
 h1 {
     text-align: center;
 }
@@ -73,7 +69,6 @@ h1 {
 
 #pagina-prod { /* productos.html*/
   color: white;
-  /* text-decoration: none; */
 }
 
 #pagina-prod:hover { /* productos.html*/
@@ -83,12 +78,10 @@ h1 {
 
 /* contenedor de todos los productos */
 .contenido-productos {
-  
   border-radius: 5px;
   background-color: rgb(231, 241, 240);
   padding: 20px;
   margin: 5px;
-
 }
 
 /* cada producto tiene una sombra */
@@ -98,25 +91,25 @@ h1 {
   transition: transform 0.3s ease; /* transición suave */
 }
 
-.fondo-prod { /* productos.html*/
+/* productos.html*/
+.fondo-prod { 
   padding: 10px;
   color: white;
   background-color: rgb(47, 96, 90, 0.8);
 }
 
-.main { /*para el fondo de la pagina de productos */
+/*para el fondo de la pagina de productos */
+.main { 
   background-color: rgb(231, 241, 240);
 }
 
-.tit-prod { /* titulo de la pagins de productos */
+/* titulo de las paginas */
+.tit-prod { 
   border-radius: 10px;
   font-size: 3rem;
-
   color: rgb(47, 90, 96);
-
   padding: 10px;
   margin-top: 20px;
-
   animation: ingresoTitulo 2.5s ;
 
 }
@@ -130,7 +123,8 @@ h1 {
 }
 }
 
-.flecha {/* productos.html*/
+/* estilos de flecha del carrousel dentro de productos.html*/
+.flecha {
   background-color: rgb(47, 96, 90);
   border-radius: 10px;
   height: 100px;
@@ -138,12 +132,14 @@ h1 {
 
 } 
 
-.imag-prod { /* imagenes del carrousel */ 
+/* imagenes del carrousel */ 
+.imag-prod { 
   max-width: 100%; /* Cambiar a 100% para que las imágenes se ajusten al contenedor */
   max-height: auto;
 }
 
-.galeria { /* para hacer el carrousel responsivo */
+/* para hacer el carrousel responsivo */
+.galeria { 
   display: flex;
   flex-direction: row;
 }
@@ -193,7 +189,7 @@ h1 {
 
 }
 
-/* tengo q tocar galeria */
+
 
 .fondo-qs {
  background-color:  rgb(231, 241, 240);
@@ -208,6 +204,8 @@ h1 {
   color: rgb(47, 96, 90, 0.8);
 }
 
+/* estilos del link desde quienes somos a pagina del formulario */
+
 .link-form {
   color: black;
   text-decoration: underline;
@@ -218,6 +216,7 @@ h1 {
   text-decoration: none;
 }
 
+/* estilos del mapa dentro del quienes somos */
 .map-container {
   position: relative;
   padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
