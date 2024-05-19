@@ -53,6 +53,7 @@ footer {
     height: 50px;
     align-content: center;
     text-align: center;
+    padding: 50px;
   }
 
 
@@ -235,5 +236,24 @@ h1 {
   border: 0;
 }
 
+/* iconos footer */
 
+.social-media {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  
+}
+
+.social-media a {
+  color: #fff;
+  font-size: 24px;
+  text-decoration: none;
+  transition: color 0.3s;
+  color: rgb(47, 96, 90, 0.8);
+}
+
+.social-media a:hover {
+  color:  rgb(47, 96, 90);/* Color al pasar el ratón por encima */
+}
 
