@@ -41,18 +41,40 @@
         </nav>
       </header>
 
-    <br><br><br>
-    <h1>Formulario de contacto</h1>
-    <br><br><br>
+    <h1 class="tit-prod">Formulario de Contacto</h1><br>
+    <div class="contacto">
 
+        <form id="form" onsubmit="return valFormulario()">
+            <label for="nombre">Nombre:</label>
+            <input size=15 id="nombre" type="text">
+            <br><br>
+            <label id="lastname">Apellido:
+            <input size=15 id="lastname" type="text"></label>
+            <br><br>
+            <label>E-Mail:
+            <input type="text" placeholder="tucorreo@ejemplo.com"></label>
+            <br><br>
+            <label id="Telefono">Teléfono:
+            <input size=15 id="Telefono" type="text"></label>
+            <BR>
+            <p class="mensaje1">Mensaje:</p>
+            <textarea class="escribe" name="comments" placeholder="Escribe aquí"></textarea>
+            <br>
+            <button type="submit" class="enviar">Enviar</button>
+            <button type="reset" onClick="enviarMensaje()" class="borrar">Borrar</button>                        
+        </form>
+    </div> 
+
+    <script src="../js/script.js"></script>
+    
 
     <footer>
         <div class="social-media">
             <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
             <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
             <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-          </div> 
+            <a href="https://wa.me/1234567890" target="_blank" class="whatsapp-icon"><i class="fab fa-whatsapp"></i></a> 
+         </div> 
         <p>Derechos Reservados @2024</p>
 
     </footer>
