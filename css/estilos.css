@@ -206,24 +206,6 @@ h2{
 
 }
 
-/* medium devices */
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  
-}
-
-/* large devices */
-@media screen and (min-width: 992px) and (max-width: 1199px) {
-
-
-}
-
-/* extra large devices */
-@media screen and (min-width: 1200px) {
-
-}
-
-
-
 .fondo-qs {
  background-color:  rgb(231, 241, 240);
  padding: 10px;
@@ -366,5 +348,7 @@ textarea {
 }
 
 .whatsapp-icon:hover {
-  background-color: #128C7E;
+  background-color: #25D366;
+  opacity: 70%;
+  transform: scale(1.3);
 }
