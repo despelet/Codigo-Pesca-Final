@@ -38,7 +38,7 @@
                 </li>
                 <li class="nav-item">
                   <a class="nav-link text-1" href="#" >
-                      <i class="fas fa-shopping-cart"></i> <span id="cartCount" class="badge bg-secondary">0</span>
+                      <i class="fas fa-shopping-cart"></i> <span id="cartCount" class="badge bg-secondary"></span>
                   </a>
                 </li>
               </ul>
@@ -46,22 +46,35 @@
         </nav>
       </header>
 
-    <main>
-        <div class="container">
-            <h1 class="text-center my-4">Carrito de Compras</h1>
-            <div id="cart-items" class="row justify-content-center">
+    <main >
+        <div class="container-fluid " style="height: 600px;  position: relative;">
+            <h1 class="text-center my-4" >Carrito de Compras</h1>
+            <div class="container fondo-qs" style="padding: 40px; border-radius: 5px;">
+                <div id="cart-items" class="row justify-content-center">
                 <!-- Aquí se agregarán dinámicamente los elementos del carrito -->
-            </div>
-            <div class="text-center">
-                <button class="btn btn-success my-4">Pagar</button>
+                </div>
+                <div class="checkout-container">
+                    <div class="text-center">
+                        <h3>Total: <span id="cartTotal">$0.00</span></h3>
+                    </div>
+                    <div class="text-center">
+                        <button class="btn btn-success my-4">Pagar</button>
+                    </div>     
+                </div>
             </div>
         </div>
     </main>
 
-    <footer class="text-center mt-5">
-        <p>&copy; 2024 Tu Empresa. Todos los derechos reservados.</p>
-    </footer>
+    <footer>
+        <div class="social-media">
+          <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://wa.me/1234567890" target="_blank" class="whatsapp-icon"><i class="fab fa-whatsapp"></i></a> 
+        </div>  
+        <p>Derechos Reservados @2024</p>
+      </footer>
 
-    <script src="../js/script.js"></script> <!-- Ajusta la ruta según donde tengas tu archivo de scripts -->
+    <script src="../js/script.js"></script> 
 </body>
 </html>

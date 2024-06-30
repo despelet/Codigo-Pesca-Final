@@ -101,7 +101,7 @@ h2{
 /* PRODUCTOS */
 
 #pagina-prod { /* productos.html*/
-  color: white;
+  color: black;
 }
 
 #pagina-prod:hover { /* productos.html*/
@@ -352,3 +352,11 @@ textarea {
   opacity: 70%;
   transform: scale(1.3);
 }
+
+/* estilos para el carrito*/
+
+.checkout-container{
+  position: absolute; 
+  bottom: 0px; 
+  right: 10px;
+} 
