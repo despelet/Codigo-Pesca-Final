@@ -1,0 +1,133 @@
+<body>
+      
+    <header>
+          <nav class="navbar navbar-expand-lg bg-2">
+            <div class="container-fluid">
+              <a class="navbar-brand  ps-2" href="#" ><img src="./images/logoverde_85px_horizontal.png"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item active">
+                      <a class="nav-link text-1" href="#">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link text-1" href="#">Quienes Somos</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link text-1" href="#">Productos</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link text-1" href="#">Contacto</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-1" href="#" >
+                        <i class="fas fa-shopping-cart"></i> <span id="cartCount" class="badge bg-secondary"></span>
+                    </a>
+                  </li>
+                </ul>
+            </div>
+          </nav>
+        </header>  
+  
+    <h1 class="tit-prod">Indumentaria</h1>
+    <main class="d-flex justify-content-start">
+        
+        <a href="/indumentaria" class="btn btn-outline-light text-dark">
+            <i class="bi bi-arrow-left"></i> Volver a Productos
+        </a>
+    </main>
+    
+    {{!-- <form class="row m-4" role="search" method="get" action="/productos/listado">
+        <input class="col form-control ms-3" type="search" placeholder="id..." aria-label="Search" id="id" name="id">
+        <button class="col btn btn-primary" type="submit">Buscar</button>
+        <div class="col-4"></div>
+        <a href="/productos/listado" class="col-3 btn btn-success me-3">Agregar productos</a>
+         <a href="/productos" class="col-3 btn btn-success me-3">Volver</a> 
+
+    </form> --}}
+
+    <div class="container">
+        <form class="row g-3 m-4" role="search" method="get" action="/indumentaria/listado">
+            <div class="col-auto">
+                <input class="form-control" type="search" placeholder="id..." aria-label="Search" id="id" name="id">
+            </div>
+            <div class="col-auto">
+                <button class="btn btn-primary" type="submit">Buscar</button>
+            </div>
+            <div class="col-auto">
+                <a href="/indumentaria/alta" class="btn btn-success">Agregar productos</a>
+                {{!-- <a href="/indumentaria" class="col-3 btn btn-success me-3">Volver</a> --}}
+            </div>
+        </form>
+    </div>
+
+    <main class="main">
+        <div class="container mt-3">
+            
+            <div class="contenido-productos"> 
+            <div class="row">
+
+            <div class="col">
+
+                <table class="table table-hover table-striped table-bordered table-light">
+                    <thead>
+                        <tr class="text-center">
+                            <th>Id</th>
+                            <th>Tipo</th>
+                            <th>Nombre</th>
+                            <th>Descripcion</th>
+                            <th>Precio</th>
+                            <th>Imagen</th>
+                            <th>Editar</th>
+                            <th>Eliminar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{#each data}}   
+                        <tr>
+                        <td>{{id}}</td>
+                        <td>{{tipo}}</td>
+                        <td>{{nombre}}</td>
+                        <td>{{descripcion}}</td>
+                        <td>{{precio}}</td>
+                        <td style="width: 20%;"><img src="{{imagen}}" alt="Imagen del diseño" style="width: 70%;"></td>
+                        <td><a href="/indumentaria/modificar/{{id}}" class="btn btn-primary">Editar</a></td>
+                        <td><a href="/indumentaria/eliminar/{{id}}" class="btn btn-danger">Eliminar</a></td> 
+                        </tr>
+                        {{/each}}
+                    </tbody>
+                </table>
+            </div>
+            </div>
+            
+
+            </div>
+        </div>
+
+        
+
+    </main>
+
+    <main class="d-flex justify-content-start">
+        
+        <a href="productos.html" class="btn btn-outline-light text-dark">
+        <i class="bi bi-arrow-left"></i> Volver a Productos
+    </a>
+    </main>
+
+    {{!-- <script src="../js/script.js"></script> --}}
+
+
+        <footer>
+        <div class="social-media">
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/1234567890" target="_blank" class="whatsapp-icon"><i class="fab fa-whatsapp"></i></a> 
+        </div> 
+            <p>Derechos Reservados @2024</p>
+
+        </footer>
+</body>

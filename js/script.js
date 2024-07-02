@@ -8,7 +8,9 @@
 // })
 
 //SUMAR EL FETCH
-   
+
+
+
 function valFormulario() {
     let nombre = document.getElementById("nombre").value.trim();
 

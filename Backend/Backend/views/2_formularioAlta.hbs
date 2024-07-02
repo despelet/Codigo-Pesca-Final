@@ -1,0 +1,66 @@
+<body>
+      
+      <header>
+          <nav class="navbar navbar-expand-lg bg-2">
+            <div class="container-fluid">
+              <a class="navbar-brand  ps-2" href="#" p><img src="../../../img/logoverde_85px_horizontal.png"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item active">
+                      <a class="nav-link text-1" href="#">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link text-1" href="#">Quienes Somos</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link text-1" href="#">Productos</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link text-1" href="#">Contacto</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-1" href="#" >
+                        <i class="fas fa-shopping-cart"></i> <span id="cartCount" class="badge bg-secondary"></span>
+                    </a>
+                  </li>
+                </ul>
+            </div>
+          </nav>
+        </header>
+        
+          <h1 class="tit-prod">Alta de Producto</h1>
+
+<div class="container-fluid justify-content-center contacto" >
+    <div >
+        <h1 class="text-center text-dark p-2 mt-4">Alta de Producto</h1>
+        <form action="/indumentaria/alta" method="post" enctype="multipart/form-data">
+            <div class="form-group my-3">
+                <label for="formGroupExampleInput">Tipo</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ingrese el tipo de producto (buzo/remera/etc)" name="tipo">
+            </div>
+            <div class="form-group my-3">
+                <label for="formGroupExampleInput">Nombre</label>
+                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Ingrese el nombre del producto" name="nombre">
+            </div>
+            <div class="form-group my-3">
+                <label for="formGroupExampleInput2">Descripcion</label>
+                <input type="text" class="form-control" id="formGroupExampleInput3" placeholder="Ingrese la descripción del producto" name="descripcion">            
+            </div>
+            <div class="form-group my-3">
+                <label for="formGroupExampleInput">Precio</label>
+                <input type="number" class="form-control" id="formGroupExampleInput4" placeholder="Ingrese el precio" name="precio">
+            </div>
+            <div class="form-group my-3">
+                <label for="exampleFormControlFile1">Imagen</label>
+                <input type="file" class="form-control" id="exampleFormControlFile1" name="imagen">
+            </div>
+            <div class="d-grid gap-2 col-6 mx-auto">
+                <button type="submit" class="btn btn-secondary btn-block mt-5">Agregar</button>
+                <a href="/indumentaria/listado" class="btn btn-secondary btn-block mt-4">Retornar</a>
+            </div>
+        </form>
+    </div>
+</div>
