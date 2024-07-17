@@ -21,7 +21,7 @@ const fs = require('fs');
 router.get('/', function (req, res, next) {
     connection.query('select * from indumentaria', function (error, results, fields) {
         if (error) throw error;
-        res.render('index');
+        res.render('index', {data: results});
     });
 });
 

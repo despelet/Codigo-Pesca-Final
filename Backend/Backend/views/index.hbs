@@ -1,5 +1,3 @@
-
-      
       <header>
           <nav class="navbar navbar-expand-lg bg-2">
             <div class="container-fluid">
@@ -28,6 +26,7 @@
                   </li>
                 </ul>
             </div>
+            </div>
           </nav>
         </header>
   
@@ -39,10 +38,18 @@
     </a>
   </main>
 
+  <main class="d-flex justify-content-end">
+        
+        <a href="/indumentaria/listado" class="btn btn-outline-light text-dark">
+            <i class="bi bi-arrow-right"></i> Listado de productos
+        </a>
+    </main>
+
   <main class="main">
     <div class="container mt-3">
         
         <div class="contenido-productos"> 
+          <div class="row">
             {{#each data}}
                 <div class="col-md-3 col-sm-6">
                     <div class="card mb-4 prod1">
@@ -55,206 +62,11 @@
                         </div>
                     </div>
                 </div>
-
-
-
-
-
-          <!-- <div class="row">
-            <div class="col-md-3 col-sm-6">
-                <div class="card mb-4 prod1">
-                    <img src="../img/indumentaria/Buzo-Polar-Payo-10.png" class="card-img-top" alt="Producto 1">
-                    <div class="card-body">
-                        <h5 class="card-title">Buzo polar Payo</h5>
-                        <p class="card-text">Color negro</p>
-                        <p class="card-text border border-dark py-2 px-3 rounded" style="display: inline-block;">Precio: $35.000</p>
-                        <button class="btn btn-success aviso" onclick="addToCart('Buzo polar Payo - Negro', 35000)">Agregar al carrito</button>
-                      </div>
-                </div>
-              </div>
-            <div class="col-md-3 col-sm-6">
-              <div class="card mb-4 prod1">
-                  <img src="../img/indumentaria/Buzo-Polar-Payo-13.png" class="card-img-top" alt="Producto 1">
-                  <div class="card-body">
-                      <h5 class="card-title">Buzo polar Payo</h5>
-                      <p class="card-text">Color verde</p>
-                      <p class="card-text border border-dark py-2 px-3 rounded" style="display: inline-block;">Precio: $35.000</p>
-                      <button class="btn btn-success aviso" onclick="addToCart('Buzo polar Payo - Verde', 35000)">Agregar al carrito</button>
-                    </div>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-              <div class="card mb-4 prod1">
-                  <img src="../img/indumentaria/Buzo-Polar-Payo-Petroleo-5.png" class="card-img-top" alt="Producto 1">
-                  <div class="card-body">
-                      <h5 class="card-title">Buzo polar Payo</h5>
-                      <p class="card-text">Color azul</p>
-                      <p class="card-text border border-dark py-2 px-3 rounded" style="display: inline-block;">Precio: $35.000</p>
-                      <button class="btn btn-success aviso" onclick="addToCart('Buzo polar Payo - Azul', 35000)">Agregar al carrito</button>
-                  </div>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-              <div class="card mb-4 prod1">
-                  <img src="../img/indumentaria/Campera-Payo-Rompeviento-Impermeable-3-scaled.jpg" class="card-img-top" alt="Producto 1">
-                  <div class="card-body">
-                      <h5 class="card-title">Rompevientos Payo</h5>
-                      <p class="card-text">Color blanco</p>
-                      <p class="card-text border border-dark py-2 px-3 rounded" style="display: inline-block;">Precio: $50.000</p>
-                      <button class="btn btn-success aviso" onclick="addToCart('Rompevientos Payo - Blanco', 50000)">Agregar al carrito</button>
-                  </div>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-              <div class="card mb-4 prod1">
-                  <img src="../img/indumentaria/Campera-Payo-Rompeviento-Impermeable-5-scaled.jpg" class="card-img-top" alt="Producto 1">
-                  <div class="card-body">
-                      <h5 class="card-title">Rompevientos Payo</h5>
-                      <p class="card-text">Color Verde lima</p>
-                      <p class="card-text border border-dark py-2 px-3 rounded" style="display: inline-block;">Precio: $50.000</p>
-                      <button class="btn btn-success aviso" onclick="addToCart('Rompevientos Payo - Verde lima', 50000)">Agregar al carrito</button>
-                  </div>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-              <div class="card mb-4 prod1">
-                  <img src="../img/indumentaria/Combo-Remera-Cuello-Payo.png" class="card-img-top" alt="Producto 1">
-                  <div class="card-body">
-                      <h5 class="card-title">Combo 1 Payo</h5>
-                      <p class="card-text">Diseño: Dorado </p>
-                      <p class="card-text border border-dark py-2 px-3 rounded" style="display: inline-block;">Precio: $45.000</p>
-                      <button class="btn btn-success aviso" onclick="addToCart('Combo Remera+Cuello - Dorado', 45000)">Agregar al carrito</button>
-                  </div>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-              <div class="card mb-4 prod1">
-                  <img src="../img/indumentaria/Combo-Remera-Cuello-Tararira.png" class="card-img-top" alt="Producto 1">
-                  <div class="card-body">
-                      <h5 class="card-title">Combo 2 Payo</h5>
-                      <p class="card-text">Diseño: Tararira </p>
-                      <p class="card-text border border-dark py-2 px-3 rounded" style="display: inline-block;">Precio: $45.000</p>
-                      <button class="btn btn-success aviso" onclick="addToCart('Combo Remera+Cuello - Tararira', 45000)">Agregar al carrito</button>
-                  </div>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-              <div class="card mb-4 prod1">
-                  <img src="../img/indumentaria/Remera-Payo-Capucha-Breaking-Limits-Full-Collor-Proteccion-UV-40-1.png" class="card-img-top" alt="Producto 1">
-                  <div class="card-body">
-                      <h5 class="card-title">Remera Payo</h5>
-                      <p class="card-text">Color negro con azul </p>
-                      <p class="card-text border border-dark py-2 px-3 rounded" style="display: inline-block;">Precio: $38.000</p>
-                      <button class="btn btn-success aviso" onclick="addToCart('Remera Payo - Negro con azul', 38000)">Agregar al carrito</button>
-                  </div>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-              <div class="card mb-4 prod1">
-                  <img src="../img/indumentaria/A-Remera-Payo-Capucha-Breaking-Limits-Full-Collor-Proteccion-UV-40-4-600x600.png" class="card-img-top" alt="Producto 1">
-                  <div class="card-body">
-                      <h5 class="card-title">Remera Payo</h5>
-                      <p class="card-text">Color blanca con celeste</p>
-                      <p class="card-text border border-dark py-2 px-3 rounded" style="display: inline-block;">Precio: $38.000</p>
-                      <button class="btn btn-success aviso" onclick="addToCart('Remera Payo - Blanco con celeste', 38000)">Agregar al carrito</button>
-                  </div>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-              <div class="card mb-4 prod1">
-                  <img src="../img/indumentaria/Remera-Payo-con-Capucha-Proteccion-UV-Modelo-1-1-600x600.png" class="card-img-top" alt="Producto 1">
-                  <div class="card-body">
-                      <h5 class="card-title">Remera Payo</h5>
-                      <p class="card-text">Estampado camuflado</p>
-                      <p class="card-text border border-dark py-2 px-3 rounded" style="display: inline-block;">Precio: $38.000</p>
-                      <button class="btn btn-success aviso" onclick="addToCart('Remera Payo - Camuflado', 38000)">Agregar al carrito</button>
-                  </div>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-              <div class="card mb-4 prod1">
-                  <img src="../img/indumentaria/Remera-Payo-con-Capucha-Proteccion-UV-Modelo-13-600x600.png" class="card-img-top" alt="Producto 1">
-                  <div class="card-body">
-                      <h5 class="card-title">Remera Payo</h5>
-                      <p class="card-text">Estampa grises </p>
-                      <p class="card-text border border-dark py-2 px-3 rounded" style="display: inline-block;">Precio: $38.000</p>
-                      <button class="btn btn-success aviso" onclick="addToCart('Remera Payo - Grises', 38000)">Agregar al carrito</button>
-                  </div>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-              <div class="card mb-4 prod1">
-                  <img src="../img/indumentaria/Remera-Payo-con-Capucha-Proteccion-UV-Modelo-Evolution-1-1-600x600.png" class="card-img-top" alt="Producto 1">
-                  <div class="card-body">
-                      <h5 class="card-title">Remera Payo</h5>
-                      <p class="card-text">Color tierra </p>
-                      <p class="card-text border border-dark py-2 px-3 rounded" style="display: inline-block;">Precio: $38.000</p>
-                      <button class="btn btn-success aviso" onclick="addToCart('Remera Payo - Tierra', 38000)">Agregar al carrito</button>
-                  </div>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-              <div class="card mb-4 prod1">
-                  <img src="../img/indumentaria/Remera-Payo-Especies-Lima-Proteccion-UV-copia-6-600x600.jpeg" class="card-img-top" alt="Producto 1">
-                  <div class="card-body">
-                      <h5 class="card-title">Remera Payo</h5>
-                      <p class="card-text">Color lima</p>
-                      <p class="card-text border border-dark py-2 px-3 rounded" style="display: inline-block;">Precio: $38.000</p>
-                      <button class="btn btn-success aviso" onclick="addToCart('Remera Payo - Lima', 38000)">Agregar al carrito</button>
-                  </div>
-              </div>
-            </div>
-
-            <div class="col-md-3 col-sm-6">
-              <div class="card mb-4 prod1">
-                  <img src="../img/indumentaria/Remera-PAYO-Proteccion-UV-Breaking-Capucha-1.jpeg" class="card-img-top" alt="Producto 1" style="width:83%">
-                  <div class="card-body">
-                      <h5 class="card-title">Remera Payo</h5>
-                      <p class="card-text">Color azul</p>
-                      <p class="card-text border border-dark py-2 px-3 rounded" style="display: inline-block;">Precio: $38.000</p>
-                      <button class="btn btn-success aviso" onclick="addToCart('Remera Payo - Azul', 38000)">Agregar al carrito</button>
-                  </div>
-              </div>
-            </div>
-
-            <div class="col-md-3 col-sm-6">
-              <div class="card mb-4 prod1">
-                  <img src="../img/indumentaria/Remera-PAYO-Proteccion-UV-Breaking-Capucha-Gris-Perla-3.jpeg" class="card-img-top" alt="Producto 1" >
-                  <div class="card-body">
-                      <h5 class="card-title">Remera Payo</h5>
-                      <p class="card-text">Color gris</p>
-                      <p class="card-text border border-dark py-2 px-3 rounded" style="display: inline-block;">Precio: $38.000</p>
-                      <button class="btn btn-success aviso" onclick="addToCart('Remera Payo - Gris', 38000)">Agregar al carrito</button>
-                  </div>
-              </div>
-            </div>
-          </div> -->
+            {{/each}}
+          </div>
+            
           
-
-          <div class="row principal justify-content-center align-items-center">
-            <div class="col-8 tabla my-3">    
-
-                <h1 class="text-white text-center">Consulta General de Productos</h1>
-
-                <table class="table table-hover table-striped mt-5 text-center">
-
-                </table>
-            </div>
-
-        </div>
-
-        </div>
-      </div>
-
-      
-
-  </main>
-
-  <main class="d-flex justify-content-start">
-    
-    <a href="productos.html" class="btn btn-outline-light text-dark">
-      <i class="bi bi-arrow-left"></i> Volver a Productos
-  </a>
+    </div>
   </main>
 
   <script src="../js/script.js"></script>
@@ -267,6 +79,9 @@
         <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
         <a href="https://wa.me/1234567890" target="_blank" class="whatsapp-icon"><i class="fab fa-whatsapp"></i></a> 
       </div> 
-        <p>Derechos Reservados @2024</p>
+        <p>Derechos Reservados</p>
 
-    </footer>
+    </footer> 
+
+
+  
