@@ -5,7 +5,7 @@ drop table accesorios;
 
 create table if not exists indumentaria(
 id int(7) primary key auto_increment,
-tipo varchar(10),
+tipo varchar(50),
 nombre varchar(50) not null,
 descripcion varchar(50),
 precio int(10),
@@ -13,7 +13,7 @@ imagen varchar(100));
 
 create table if not exists accesorios(
 id int(7) primary key auto_increment,
-tipo varchar(10),
+tipo varchar(50),
 nombre varchar(50) not null,
 descripcion varchar(50),
 precio int(10),
